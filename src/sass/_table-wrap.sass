@@ -7,6 +7,18 @@
   &__btn
     margin-top: 10px
 
+  td
+    &:first-child
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+
+  td,
+  th
+    +m(570)
+      &:last-child
+        display: none
+
   .table__link
     padding-left: 23px
     position: relative
