@@ -1,0 +1,16 @@
+.item
+  margin-bottom: 10px
+  padding: 19px 12px 12px
+  display: flex
+  flex-direction: row
+  border-bottom: 1px solid $borderGrey
+
+  &:last-child
+    margin-bottom: 0
+  +m(1024)
+    align-items: center
+
+  &__left
+    margin-right: 45px
+    +m(768)
+      display: none

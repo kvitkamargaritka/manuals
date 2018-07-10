@@ -1,0 +1,71 @@
+.alphabet
+  margin-bottom: 20px
+
+  &__text
+    color: $textBlack
+
+  &__list
+    margin-top: 10px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    box-sizing: border-box
+    +m(1024)
+      flex-wrap: wrap
+      justify-content: flex-start
+
+  &__link,
+  &__link:visited
+    color: $blue
+    width: 30px
+    height: 30px
+    line-height: 30px
+    text-align: center
+    background-color: transparent
+    transition: all .3s ease-in-out
+    font-size: 14px
+    letter-spacing: -.5px
+    text-transform: uppercase
+    text-decoration: none
+    +h600
+
+    &:hover,
+    &.is-active
+      color: #fff
+      background-color: $blue
+      text-decoration: none
+
+
+.alphabet-main
+
+  &__text
+    display: inline-block
+    color: $textBlueLight
+    margin-bottom: 4px
+
+  &__list
+    display: flex
+    flex-direction: row
+    box-sizing: border-box
+    +m(1024)
+      flex-wrap: wrap
+      justify-content: flex-start
+
+  &__el
+    padding-right: 18px
+
+    &:last-child
+      padding-right: 0
+
+  &__link,
+  &__link:visited
+    color: #fff
+    font-size: 14px
+    letter-spacing: -.5px
+    text-transform: uppercase
+    text-decoration: none
+    +h600
+
+    &:hover
+      color: $textBlueLight
+      text-decoration: none

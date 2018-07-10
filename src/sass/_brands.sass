@@ -1,0 +1,60 @@
+.brands
+  margin: 30px 0
+  +m(768)
+    margin: 15px
+
+  &__top
+    padding-bottom: 10px
+    margin-bottom: 20px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid $borderGrey
+    +m(768)
+      flex-direction: column
+
+  &__title
+    font-size: 34px
+    letter-spacing: -1.5px
+    +h300
+
+  &__btn
+    position: relative
+
+    .icon
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: 20px
+
+    +m(768)
+      width: 100%
+      margin-top: 10px
+
+  &__list
+    height: 330px
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    +m(768)
+      flex-direction: row
+      height: auto
+
+  &__el
+    margin-bottom: 5px
+    width: 25%
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+    &:last-child
+      margin-bottom: 0
+
+    +m(768)
+      width: 50%
+
+  &__link
+    font-size: 15px
+    &:hover
+      color: #2c8aea

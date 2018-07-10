@@ -1,0 +1,44 @@
+.breadcrumbs
+  padding: 10px 0
+
+  &__list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+  &__el
+    position: relative
+    padding-right: 26px
+
+    &:after
+      position: absolute
+      content: ''
+      top: 5px
+      right: 14px
+      width: 1px
+      height: 9px
+      background-color: #9e9e9e
+      transform: rotate(23deg)
+
+    &:last-child
+      padding-right: 0
+      a
+        color: #9e9e9e
+        pointer-events: none
+
+      &:after
+        display: none
+
+    +m(768)
+      padding-right: 17px
+      &:after
+        right: 8px
+
+  &__link,
+  &__link:visited
+    color: $linkBlue
+    font-size: 13px
+    +h400
+
+    &:hover
+      text-decoration: underline

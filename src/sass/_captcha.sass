@@ -1,0 +1,64 @@
+.captcha
+  display: flex
+  flex-direction: column
+
+  &__title
+    display: inline-block
+    font-size: 14px
+    margin-bottom: 17px
+    text-transform: uppercase
+    +h600
+
+  &__form
+    display: flex
+    position: relative
+
+  &__input
+    margin: 0 14px
+    padding: 0 10px
+    width: 100px
+    height: 42px
+    line-height: 42px
+    font-size: 15px
+    border: 1px solid #e0e0e0
+    box-sizing: border-box
+
+  &__el
+    display: flex
+    align-items: center
+
+  &__link
+    line-height: 0
+
+  &__btn
+    text-align: center
+    display: inline-block
+    padding: 0 26px
+    height: 42px
+    line-height: 42px
+    width: 160px
+    font-size: 16px
+    text-transform: uppercase
+    color: #fff
+    background-color: $blue
+    border: 1px solid $blue
+    white-space: nowrap
+    transition: all .3s ease-in-out
+    cursor: pointer
+    overflow: hidden
+    box-sizing: border-box
+    +h600
+
+    &:hover
+      background-color: #57a8ff
+      border-color: #57a8ff
+
+  &__error
+    margin-bottom: 10px
+
+  &__error-text
+    position: absolute
+    top: -17px
+    font-size: 12px
+    color: #c00
+    +h600

@@ -1,0 +1,43 @@
+.info
+
+  &__name
+    display: inline-block
+    margin-bottom: 10px
+    font-size: 22px
+    color: $linkBlue
+    +m(1024)
+      font-size: 19px
+
+  &__list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    +m(490)
+      flex-direction: column
+
+  &__el
+    width: 45%
+    margin-bottom: 10px
+
+    &:last-child
+      margin-bottom: 0
+
+  dl
+    display: flex
+    flex-direction: row
+
+  dt
+    min-width: 80px
+    font-size: 15px
+    +h600
+
+  dd
+    font-size: 15px
+    +h300
+
+  &.is-large
+    margin-bottom: 30px
+    dl
+      margin-bottom: 15px
+    dt
+      min-width: 140px

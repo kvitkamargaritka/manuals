@@ -1,0 +1,79 @@
+.btn
+  display: flex
+  flex-direction: row
+  text-align: center
+  justify-content: center
+  flex-shrink: 0
+  width: 260px
+  height: 36px
+  line-height: 36px
+  color: #fff
+  background-color: $blue
+  font-size: 14px
+  text-transform: uppercase
+  white-space: nowrap
+  transition: all .3s ease-in-out
+  cursor: pointer
+  overflow: hidden
+  +h600
+
+  &:hover
+    background-color: #57a8ff
+    color: #fff
+
+  &__text
+    margin-left: 20px
+
+  &.is-large
+    width: 290px
+    height: 36px
+    line-height: 36px
+    +m(768)
+      width: 100%
+
+  &.is-medium
+    width: 160px
+    height: 40px
+    line-height: 40px
+
+  &.is-small
+    width: 50px
+    height: 35px
+    line-height: 35px
+
+  &.with-icon
+    position: relative
+    display: flex
+    flex-direction: row
+    align-items: center
+    width: 170px
+    .icon
+      position: absolute
+      top: 50%
+      left: 10px
+      transform: translateY(-50%)
+
+  &:hover,
+  &:focus,
+  &:visited
+    text-decoration: none
+
+  &.is-search
+    display: block
+    text-align: center
+    background-color: #1fce54
+    width: 156px
+    height: 50px
+    line-height: 50px
+    font-size: 20px
+    text-transform: uppercase
+    border-radius: 0
+    +h600
+
+    &:hover
+      background-color: #31d864
+
+    +m(768)
+      width: 130px
+      font-size: 16px
+

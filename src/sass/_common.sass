@@ -1,0 +1,134 @@
+//variables
+$textBlack: #313131
+$btnGreen: #61bc34
+$blue: #4c9ef6
+$borderGrey: #e5e5e5
+$bgGreyLight: #fafbfc
+$bgGreen: #63d12d
+$btnGreenDark: #76c64e
+$linkBlue: #2c8aea
+$bgGrey: #dbdbdb
+$textBlue: #2992e0
+$textBlueLight: #a8d0fe
+
++font-icon(manuals-icons, manuals-icons)
+
+=h300
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-weight: 300
+
+=h400
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-weight: 400
+
+=h600
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-weight: 600
+
+body
+  display: flex
+  flex-direction: column
+  font-size: 13px
+  color: $textBlack
+  +h400
+
+h1
+  font-size: 50px
+  letter-spacing: -.9px
+  +h300
+
+  +m(1024)
+    font-size: 40px
+
+  +m(768)
+    font-size: 35px
+
+  &.is-fz-34
+    font-size: 34px
+    +m(1024)
+      font-size: 27px
+    +m(768)
+      font-size: 24px
+
+
+h2
+  font-size: 22px
+  +h400
+
+  +m(768)
+    font-size: 20px
+
+a
+  color: $textBlack
+  display: inline-block
+  text-decoration: none
+  cursor: pointer
+  transition: all .3s ease-in-out
+
+  &:hover
+    color: $linkBlue
+
+  &:active,
+  &:focus,
+  &:visited
+    text-decoration: none
+
+img
+  display: inline-block
+  max-width: 100%
+  height: auto
+
+input[type='text'],
+input[type='search']
+  border-radius: 0
+  -moz-appearance: none
+  -webkit-appearance: none
+
+// common blocks
+
+.banner
+  margin: 15px 0
+
+.logo
+
+  &__img
+    width: 160px
+
+  &.is-footer
+
+    .logo__img
+      width: 140px
+
+  +m(768)
+    display: none
+
+.i-m-10
+  margin: 0 10px
+      
+.text-grey
+  color: #9e9e9e
+
+.instruction
+  text-align: center
+
+  &__wrap
+    padding: 0 45px
+
+.btn-prev,
+.btn-next
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  cursor: pointer
+
+.btn-prev
+  left: -45px
+  &.icon
+    font-size: 40px
+
+.btn-next
+  right: -45px
+  &.icon
+    font-size: 40px
+
+

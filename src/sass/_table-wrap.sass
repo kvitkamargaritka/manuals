@@ -1,0 +1,33 @@
+.table-wrap
+  margin-bottom: 30px
+
+  &__name
+    margin-bottom: 10px
+
+  &__btn
+    margin-top: 10px
+
+  .table__link
+    padding-left: 23px
+    position: relative
+    color: $textBlack
+
+    &:after
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateX(-50%)
+      left: 9px
+      width: 2px
+      height: 2px
+      border-radius: 50px
+      background-color: $textBlack
+
+    &:first-child
+      padding-left: 0
+
+      &:after
+        display: none
+
+    &:hover
+      color: $linkBlue

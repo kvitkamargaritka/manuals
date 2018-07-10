@@ -1,0 +1,41 @@
+.nav
+
+  &__list
+    display: flex
+    flex-direction: row
+
+  &__el
+    position: relative
+    padding-right: 21px
+    +m(768)
+      padding-right: 15px
+
+    &:after
+      position: absolute
+      content: ''
+      top: 4px
+      right: 10px
+      width: 1px
+      height: 13px
+      background-color: $textBlack
+      +m(768)
+        right: 7px
+
+    &:last-child
+      padding-right: 0
+
+      &.nav__el
+
+        &:after
+          display: none
+
+  &__link
+    color: $textBlack
+    font-size: 13px
+
+    +m(768)
+      font-size: 12px
+
+    &:hover
+      color: $textBlack
+      opacity: .8

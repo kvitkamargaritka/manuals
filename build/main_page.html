@@ -1,0 +1,404 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Manuals D3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#fff">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600" rel="stylesheet">
+  <link rel="stylesheet" media="all" href="css/style.css" >
+  <script src="js/app.js"></script>
+</head>
+
+<body>
+  <header class="header is-main">
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header__left">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img src="img/logo_wide.svg" class="logo__img" alt="logo"/>
+            </a>
+          </div><!-- end logo -->
+          <div class="logo-mobile">
+            <a href="#" class="logo-mobile__link">
+              <img src="img/logo_mobile.svg" class="logo-mobile__img" alt="logo"/>
+            </a>
+          </div><!-- end logo -->
+        </div>
+        <div class="header__right">
+          <div class="search">
+            <form action="#" class="search__form" id="header-search-form">
+              <input class="search__input"
+                     id="header-search-input"
+                     type="text"
+                     placeholder="Search for manual"/>
+              <button class="search__btn" type="submit">
+                <span class="icon icon-search"></span>
+              </button>
+              <!--<div class="search__ico"></div>-->
+            </form>
+          </div><!-- end search -->
+        </div>
+      </div>
+    </div><!-- end container -->
+  </header><!-- end header -->
+
+  <main class="main">
+    <div class="main-banner">
+      <div class="container">
+        <div class="main-banner__wrap">
+          <h1 class="main-banner__title">The Biggest Manuals Database</h1>
+          <p class="main-banner__subtitle">Free Search For Manuals Online</p>
+          <div class="search is-general">
+            <form class="search__form" action="#">
+              <span class="search__ico">
+                <span class="icon icon-search"></span>
+              </span>
+              <input class="search__input"
+                     type="text"
+                     placeholder="Search for manual">
+              <div class="search__action">
+                <input class="btn is-search"
+                       type="button"
+                       value="Search">
+              </div>
+            </form>
+          </div><!-- end search -->
+          <div class="alphabet-main">
+            <span class="alphabet-main__text">Click on an alphabet below to see the full list of brands starting with that letter:</span>
+            <ul class="alphabet-main__list">
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">#</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">a</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">b</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">c</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">d</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">e</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">f</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">g</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">h</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">i</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">j</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">k</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">l</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">m</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">n</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">o</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">p</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">q</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">r</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">s</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">t</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">u</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">v</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">w</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">x</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">y</a>
+              </li>
+              <li class="alphabet-main__el">
+                <a href="#" class="alphabet-main__link">z</a>
+              </li>
+            </ul><!-- end alphabet__list -->
+          </div><!-- end alphabet -->
+        </div><!-- end main-banner__wrap -->
+      </div><!-- end container -->
+      <div class="quantity">
+        <div class="container">
+          <div class="quantity__wrap">
+            <ul class="quantity__list">
+              <li class="quantity__el">
+                <div class="group">
+                  <div class="group__left">
+                    <span class="group__icon icon icon-monitors"></span>
+                  </div>
+                  <div class="group__right">
+                    <span class="group__quantity">1,900,000+</span>
+                    <span class="group__name">products</span>
+                  </div>
+                </div>
+              </li>
+              <li class="quantity__el">
+                <div class="group">
+                  <div class="group__left">
+                    <span class="group__icon icon icon-2-manuals"></span>
+                  </div>
+                  <div class="group__right">
+                    <span class="group__quantity">2,832,544</span>
+                    <span class="group__name">pdf manuals</span>
+                  </div>
+                </div>
+              </li>
+              <li class="quantity__el">
+                <div class="group">
+                  <div class="group__left">
+                    <span class="group__icon icon icon-3-brands"></span>
+                  </div>
+                  <div class="group__right">
+                    <span class="group__quantity">58,482</span>
+                    <span class="group__name">brands</span>
+                  </div>
+                </div>
+              </li>
+              <li class="quantity__el">
+                <div class="group">
+                  <div class="group__left">
+                    <span class="group__icon icon icon-4-data"></span>
+                  </div>
+                  <div class="group__right">
+                    <span class="group__quantity">3.2 Tb</span>
+                    <span class="group__name">data indexed</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- end quantity -->
+    </div><!-- end main-banner -->
+    <div class="brands">
+      <div class="container">
+        <div class="brands__top">
+          <span class="brands__title">58482 brands</span>
+          <span class="brands__btn btn">
+            <span>View all brands</span>
+            <span class="icon icon-small-arrow-r"></span>
+          </span>
+        </div>
+        <div class="brands__bottom">
+          <ul class="brands__list">
+            <li class="brands__el">
+              <a href="#" class="brands__link">Acer</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">AEG</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Asus</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Black & Decker</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Bosch</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Brother</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Canon</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Casio</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Cisco</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Craftsman</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">D-Link</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Dell</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Electrolux</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Epson</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Frigidaire</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Fujitsu</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Acer</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">AEG</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Asus</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Black & Decker</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Bosch</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Brother</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Canon</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Casio</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Cisco</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Craftsman</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">D-Link</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Dell</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Electrolux</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Epson</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Frigidaire</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Fujitsu</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Acer</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">AEG</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Asus</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Black & Decker</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Bosch</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Brother</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Canon</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Casio</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Cisco</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">Craftsman</a>
+            </li>
+            <li class="brands__el">
+              <a href="#" class="brands__link">D-Link</a>
+            </li>
+          </ul>
+        </div>
+      </div><!-- end container -->
+    </div><!-- end brands -->
+
+  </main><!-- end main -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <div class="footer__left">
+          <div class="logo is-footer">
+            <a href="#" class="logo__link">
+              <img src="img/logo_wide_gray.svg" class="logo__img" alt="logo"/>
+            </a>
+          </div><!-- end logo -->
+          <div class="logo-mobile">
+            <a href="#" class="logo-mobile__link">
+              <img src="img/logo_mobile_gray.svg" alt="logo-Manuals" class="logo-mobile__img">
+            </a>
+          </div>
+        </div><!-- end footer__left -->
+        <div class="footer__center">
+          <p class="copyright">© 2018 ManualsDB.com. All rights reserved.</p>
+        </div>
+        <div class="footer__right">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__el">
+                <a href="#" class="nav__link">Home</a>
+              </li>
+              <li class="nav__el">
+                <a href="#" class="nav__link">Brands</a>
+              </li>
+              <li class="nav__el">
+                <a href="#" class="nav__link">Terms</a>
+              </li>
+              <li class="nav__el">
+                <a href="#" class="nav__link">Privacy Policy</a>
+              </li>
+              <li class="nav__el">
+                <a href="#" class="nav__link">DMCA</a>
+              </li>
+              <li class="nav__el">
+                <a href="#" class="nav__link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div><!-- end footer__right -->
+      </div><!-- end footer__wrap -->
+    </div><!-- end container -->
+  </footer><!-- end footer -->
+
+</body>
+

@@ -1,0 +1,73 @@
+.manual
+  //position: relative
+  //padding: 10px 45px
+  //border-top: 1px solid $borderGrey
+  //border-bottom: 1px solid $borderGrey
+
+  //&__list
+  //  display: flex
+  //  flex-direction: row
+  //  justify-content: space-around
+  //  flex-wrap: wrap
+  //
+  //&__el
+  //  position: relative
+  //  margin-right: 12px
+  //  &:last-child
+  //    margin-right: 0
+  //
+  //  +m(1200)
+  //    margin-right: 5px
+  //    margin-bottom: 12px
+  //
+  //  +m(1024)
+  //    margin-right: 0
+  //
+  //  &.is-active
+  //    .manual__link
+  //      border-color: $blue
+
+  &__num
+    position: absolute
+    left: 0px
+    top: 0px
+    background: $blue
+    width: 26px
+    height: 21px
+    line-height: 21px
+    color: #fff
+    +h600
+
+  &__link
+    position: relative
+    border: 2px solid #d4d4d4
+
+    &:hover,
+    &.is-active
+      border-color: $blue
+
+  &__img
+    max-width: 92px
+    width: 92px
+    height: 120px
+    box-sizing: border-box
+
+  &__btn
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
+    &.is-left
+      left: -14px
+
+    &.is-right
+      right: -14px
+
+    .icon
+      font-size: 40px
+
+  &__download
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center

@@ -1,0 +1,28 @@
+.error
+  position: relative
+  margin: 0 auto
+  max-width: 380px
+  text-align: center
+
+  &__name
+    font-size: 120px
+    line-height: 1.2
+    +h300
+    +m(768)
+      font-size: 80px
+    +m(480)
+      font-size: 60px
+
+  &__descr
+    margin-bottom: 30px
+    font-size: 22px
+    letter-spacing: -.9px
+    +h300
+
+  &__link
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+
+    &:hover
+      text-decoration: none

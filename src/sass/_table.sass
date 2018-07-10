@@ -1,0 +1,43 @@
+.table
+  table-layout: fixed
+  width: 100%
+
+  thead
+    background-color: #f1f4f5
+
+  tr
+    height: 40px
+    line-height: 40px
+
+    &:nth-child(even)
+      background-color: #f7f9fa
+
+  th
+    position: relative
+    height: 40px
+    line-height: 40px
+    text-align: left
+    font-size: 14px
+    text-transform: uppercase
+    +h600
+
+    &:first-child
+      width: 25%
+      padding-left: 13px
+
+  td
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+    font-size: 14px
+
+    &:first-child
+      padding-left: 13px
+
+  &__link
+    //padding-left: 20px
+    position: relative
+    color: $textBlack
+
+    &:hover
+      color: $linkBlue

@@ -1,0 +1,30 @@
+.pagination
+  margin-bottom: 33px
+  +m(1024)
+    display: none
+
+  &__list
+    padding: 35px 45px
+    border-bottom: 1px solid $borderGrey
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+  &__el
+    position: relative
+    margin-right: 22px
+
+    &:first-child
+      margin-right: 0
+
+    &.is-active
+      .pagination__link
+        color: $textBlack
+
+  &__link
+    font-size: 22px
+    color: $blue
+    +h600
+
+    &:hover
+      text-decoration: none
