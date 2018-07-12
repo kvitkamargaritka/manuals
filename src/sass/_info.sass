@@ -1,12 +1,17 @@
 .info
 
-  &__name
+  &__link
     display: inline-block
     margin-bottom: 10px
     font-size: 22px
     color: $linkBlue
+
+    &:hover
+      text-decoration: underline
+
     +m(1024)
       font-size: 19px
+
     +m(480)
       font-size: 16px
 

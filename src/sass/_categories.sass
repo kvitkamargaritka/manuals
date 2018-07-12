@@ -10,38 +10,53 @@
     text-transform: uppercase
     +h600
 
+  &__wrap
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+
   &__list
     display: flex
     flex-direction: row
     flex-wrap: wrap
     justify-content: flex-start
     
-  &__el
-    display: flex
-    flex-direction: row
-    justify-content: center
+  //&__el
+  //  display: flex
+  //  flex-direction: row
+  //  justify-content: center
+  //  margin-right: 5px
+  //  margin-bottom: 5px
+  //  width: 126px
+  //  height: 104px
+  //  line-height: 104px
+  //  text-align: center
+  //  color: #fff
+  //  background-color: #3189e7
+  //  transition: all .3s ease-in-out
+  //
+  //  &:hover
+  //    opacity: .9
+
+  &__link
     margin-right: 5px
     margin-bottom: 5px
+    display: inline-flex
+    flex-direction: column
     width: 126px
     height: 104px
-    line-height: 104px
-    text-align: center
+    //line-height: 104px
+    justify-content: center
+    align-items: center
     color: #fff
     background-color: #3189e7
     transition: all .3s ease-in-out
 
     &:hover
+      color: #fff
       opacity: .9
 
-  &__link
-    display: inline-flex
-    flex-direction: column
-    line-height: 1
-    justify-content: center
-    align-items: center
-    color: #fff
-    &:hover
-      color: #fff
 
   &__icon
     font-size: 50px
